@@ -1,38 +1,61 @@
 *{
+    font-size: 40px;
 
 }
 .head{
     text-align: center;
+    font-size:  50px;
 }
 #par1{
     color: blue;
     text-align: center;
+    direction: rtl;
+    unicode-bidi: bidi-override;
 
 }
 #par2{
     color: rgb(80, 200, 1);
+    text-align: left;
+    line-height: 35px;
+    column-count: 4;
+    /* -webkit- */
+    column-rule: 3px solid blue;
+    /* -moz- */
+    
     
 }
 #par3{
+    font-size: 50px;
     color: rgb(168, 68, 28);
     text-align: justify;
-    text-decoration: line-through dotted red;
+    text-decoration: line-through dotted 3px red;
+    text-shadow: 3px 3px 5px red;
+    
 }
 #par4{
     color: #7a69b6;
     text-indent: 35px;
+    letter-spacing: 4px;
 }
 #par5{
     color: hsl(130, 39%, 51%);
     text-decoration: underline wavy red;
     text-transform: capitalize;
+    word-spacing: 18px;
     
 }
 #par6{
     color: fuchsia;
     text-transform: uppercase;
+    font-family: 'Square Peg', cursive;
+    word-spacing: 8px;
+    letter-spacing: 3px;
     
 }
 #span1{
     text-decoration: overline blue;
+}
+@font-face {
+    font-family: face;
+    src: url();
 }
