@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: bisque;
+    padding: 2px;
+
+}
+.div1{
+    background-color: gold;
+    width: 150px;
+    height: 150px;
+}
+.div2{
+    box-sizing: border-box;
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+}
+.div3{
+    background-color: lightgreen;
+    width: 150px;
+    height: 150px;
+}
