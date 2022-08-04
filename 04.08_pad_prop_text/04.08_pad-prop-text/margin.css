@@ -1,0 +1,29 @@
+*{
+
+}
+h1{
+    background-color: aqua;
+    margin-bottom: 0;
+    padding: 20px 40px;
+}
+#par1{
+    background-color:blanchedalmond;
+    margin-top: 0;
+    width: 250px;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid blue;
+    width: 250px;
+    height: 150px;
+    overflow: scroll;
+}
+#part2{
+    background-color: red;
+    border: 5px solid yellow;
+}
+.container{
+    border: 2px solid red;
+    /* yukarıyı yazman lazım css hatası, border veya badding vermek gerek */
+    margin: auto;
+    background-color: bisque;
+}
