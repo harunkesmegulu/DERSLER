@@ -1,0 +1,21 @@
+.box1{
+    /* background-color: tomato; */
+    background-color: #ff0000;
+}
+.box2{
+    /* background-color: blue; */
+    background-color: rgba(0, 255, 0, 0.314);
+}
+.box3{
+    background-color: #cc5353;
+}
+.box4{
+    /* background-color: gold; */
+    background-color: rgb(0, 255, 255);
+}
+.box5{
+    background-color: hwb(120 5% 59%);
+}
+.box6{
+    background-color: magenta;
+}
