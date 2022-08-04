@@ -1,0 +1,38 @@
+*{
+
+}
+.head{
+    text-align: center;
+}
+#par1{
+    color: blue;
+    text-align: center;
+
+}
+#par2{
+    color: rgb(80, 200, 1);
+    
+}
+#par3{
+    color: rgb(168, 68, 28);
+    text-align: justify;
+    text-decoration: line-through dotted red;
+}
+#par4{
+    color: #7a69b6;
+    text-indent: 35px;
+}
+#par5{
+    color: hsl(130, 39%, 51%);
+    text-decoration: underline wavy red;
+    text-transform: capitalize;
+    
+}
+#par6{
+    color: fuchsia;
+    text-transform: uppercase;
+    
+}
+#span1{
+    text-decoration: overline blue;
+}
