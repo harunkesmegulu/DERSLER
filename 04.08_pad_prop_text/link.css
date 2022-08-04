@@ -1,0 +1,29 @@
+body{
+    padding: 50px;
+    border: 1px solid blue;
+}
+a{
+    border: 2px solid red;
+    padding: 5px;
+    /* ınline element margin ve padding almaz */
+    display: block;
+   border-radius: 5px;
+    margin-top: 50px;
+    text-decoration: none;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 2rem;
+}
+a:hover{
+    background-color: grey;
+}
+a:visited{
+    color: red;
+}
+a:active{
+    background-color: red;
+}
+.box{
+    display: flex;
+
+}
