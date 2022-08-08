@@ -6,18 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETFLIX</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
         <header id="header">
-            <h1 id="title">NET <span>FLIX</span> </h1>
-            <h3 id="discription">Thank you for signing up to Netflix.Tell me more about yourself.</h3>
+            <h1 id="title">NET<span>FLIX</span> </h1>
+            <!-- Between span and NET you can give space -->
+            <h3 id="description">Thank you for signing up to Netflix.Tell me more about yourself.</h3>
 
         </header>
         <section id="survey-form-container">
@@ -28,9 +23,10 @@
                     <input type="text" name="name" id="name" placeholder="Enter your name">
                 </div>
                 <div class="input-box">
-                    <label for="age">Age</label>
+                    <label for="number">Age</label> 
+                    <!-- number because i need only number -->
                     <br>
-                    <input type="text" name="age" id="age" placeholder="Enter your age">
+                    <input type="number" name="age" id="age" placeholder="Enter your age">
                 </div>
                 <div class="input-box">
                     <label for="email">Email</label>
@@ -48,10 +44,10 @@
                         <option value="tv-shows">TV Shows</option>
                     </select>
                 </div>
-                <div class="input-box">
+                <div class="input-box" id="checkbox">
                     <label for="#">Movie Type</label>
                     <br>
-                    <input type="checkbox" name="movie"  id="first-check" value="Comedy">
+                    <input type="checkbox" name="movie"  id="first-check" value="Comedy" required>
                     <label for="first-check">Comedy</label>
                     <br>
                     <input type="checkbox" name="movie"  id="second-check" value="Action">
@@ -61,7 +57,7 @@
                     <label for="first-check">Romance</label>
                     <br>
                 </div> 
-                <div class="input-box">
+                <div class="input-box" id="radio">
                     <label for="#">Gender</label>
                     <br>
                     <input type="radio" name="gender" id="first-radio" value="Male">
@@ -79,9 +75,10 @@
                     <br>
                     <textarea name="feedback" id="feedback" placeholder="Any comment" ></textarea>
                 </div> 
+                <div class="form-submit">
+                    <button type="submit" id="form-button">Send</button>
+                </div>
             </form>
-            
-
 
         </section>
 
