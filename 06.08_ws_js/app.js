@@ -56,3 +56,9 @@
 
 // var x = { firstName: "John", lastName: "Clarusway" };
 // console.log(x, "age:", length)
+
+// var product = 2.0 *2.5;
+// console.log(product);
+
+// var a = "My name is \ Lionel Messi \ ";
+// document.write(a);
