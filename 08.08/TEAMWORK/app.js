@@ -1,3 +1,6 @@
+console.log(7 !== 10);
+
+
 let u;
 u=5
 console.log(u)
@@ -63,4 +66,6 @@ function myFunction() {
   }
   console.log(carNAME);
 //   code here can NOT use carName
+
+
 
