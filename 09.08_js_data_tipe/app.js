@@ -158,3 +158,21 @@ myCar.age = function(current){
 myCar.age(2010)
 
 `console.log(('b' + 'a' + + 'a' + 'a').toLowerCase())`
+
+let car = "Fiat";
+// const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue",
+    fullName : function() {
+        return this.firstName + " " + this.lastName;
+}
+};
+  //objectName.propertyName
+  //objectName["propertyName"]
+  console.log(person.age); 
+  console.log(person.fullName()); 
+  console.log(person["age"]); 
