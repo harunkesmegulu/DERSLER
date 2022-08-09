@@ -106,3 +106,55 @@ console.log(+l.toFixed(2))
 let z = 1_000_000_000
 console.log(z)
 ////////////////////////
+////////////////////////strıngs////////////////
+
+let text2 = "He said, \" ı am \"";
+console.log(text2);
+
+let v = 'This """i""s"" st""ri\"ng'
+console.log(typeof v)
+let n = "Thi\"s'''' is '''''string"
+console.log(typeof n)
+let m = `This is string`
+console.log(typeof m)
+
+let userName = 'mm';
+console.log('Merhaba', userName);
+console.log(`Merhaba ${userName}`);
+console.log(`2 + 3 = ${2 + 3}`);
+console.log(`2+3 = ${2+'3'}`);
+console.log(userName.length);
+console.log(`3`-2);
+///////////////////////////////booleans
+let w = 2 ==2;
+let q = 42 == 35;
+console.log(`q =${q}`);
+console.log(`w =${w}`);
+///////////////////////////////
+let aa =``;
+let bb = ' '; ////space make it true
+let cc = 0;
+
+console.log(Boolean(aa));
+console.log(Boolean(bb));
+console.log(Boolean(cc));
+
+const myCar = {
+    make : 'ford',
+    model : 'Mustang',
+    year : 1965,
+    color : 'Black'
+  }
+  console.log(myCar);
+  myCar.color = `green` //change the inside box.
+  console.log(myCar);
+
+//   myCar = `wv`; can't be change the box
+myCar.sunRoof = false;
+myCar.age = function(current){
+    console.log(current - this.year)
+  }
+  
+myCar.age(2010)
+
+`console.log(('b' + 'a' + + 'a' + 'a').toLowerCase())`
