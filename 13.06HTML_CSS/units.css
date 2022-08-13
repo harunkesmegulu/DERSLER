@@ -3,16 +3,19 @@
 }
 
 html{
-    font-size: 5px; /* 1rem = 10px */
+    font-size: 20px; /* 1rem = 10px */
 }
 
 body{
     height: 100vh;
     /* background-color: rgb(129, 87, 37); */
-    /* border: 2px solid red; */
+    border: 2px solid red;
+    margin: 1%;
+    /* display: inline-block; */
+    text-align: center;
 }
 .abs{
-    background-color: aqua;
+        background-color: aqua;
     width: 5cm;
 }
 
@@ -33,20 +36,26 @@ body{
     width: 50vw;
 }
 .div5{
-    font-size: 50px; /*16 px*/
+    display: inline-block;
+    font-size: 3rem; /*16 px*/
 }
 .div6{
+    display: inline-block;
     font-size: 2em;  /*32 px*/
 }
 .div7{
+    display: inline-block;
     font-size: 0.5em;  /*96 px */
 }
 .div8{
+    display: inline-block;
     font-size: 1rem
 }
 .div9{
+    display: inline-block;
     font-size: 2rem
 }
 .div10{
+    display: inline-block;
     font-size: 3rem
 }
