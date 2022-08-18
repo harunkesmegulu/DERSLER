@@ -17,7 +17,8 @@
       rgba(207, 46, 207, 0.805)
     );
     padding: 0,5rem;
-    color:white;
+    
+    
   }
   
   nav.nav-top img {
@@ -67,17 +68,18 @@
   }
   .slack img {
     width: 50px;
-    height: 50px;
+    height: auto;
     position: fixed;
     bottom: 2rem;
     right: 3rem;
-    
+    border-radius: 50%;
 
   }
   .slack img:hover {
     
-    border-radius: 50%;
-    background-color: firebrick;
+   
+    background-color: rgba(178, 34, 34, 0.274);
+    box-shadow: 8px 8px 8px 8px red;
    
   }
   .slack a{
