@@ -1,0 +1,66 @@
+.yazi{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 50vw;
+}
+/*************ROTATE*******************/
+.yazi1{
+    background-color: greenyellow;
+    transform: rotateX(180deg);
+}
+.yazi2{
+    background-color: tomato;
+    transform: rotateY(180deg
+    );
+}
+.yazi3{
+    background-color: aqua;
+    transform: rotate(-45deg);
+    
+}
+/*************SCALE*******************/
+.yazi4{
+    background-color: yellow;
+}
+.yazi4:hover{
+    transform: scaleX(1.5) scaleY(3);
+}
+.yazi5{
+    background-color: blueviolet;
+}
+.yazi5:active{
+    transform: scale(1.1, 1.2);
+}
+.yazi6{
+    background-color: red;
+
+}
+.yazi6:active{
+    transform: scale(98%);
+
+}
+
+/*************TRANSLATE-TRANSFORM*******************/
+.translate{
+    background-color: aqua;
+    font-weight: 800;
+    font-size: 1.1rem;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+
+
+}
+.x:hover{
+    transform: translatex(50px);
+
+}
+.y:active{
+    transform: translatey(-50px);
+
+}
+.xy:hover{
+    transform: translate(50px, 50px)
+
+}
