@@ -1,3 +1,6 @@
+*{
+    margin: 40px ;
+}
 .yazi{
     text-align: center;
     font-size: 2rem;
@@ -49,18 +52,49 @@
     width: 100px;
     height: 50px;
     margin: 10px;
-
+    transition: background-color 1s, transform 1s;
+/*transition da birden fazla özellik verirken araya virgül konulur.*/
+/*transform da bir den fazla özellik verilirken araya sadece boşluk konulur.*/
 
 }
 .x:hover{
     transform: translatex(50px);
+    transform: scale(90%);
+   background-color: yellow;
 
 }
 .y:active{
     transform: translatey(-50px);
+    background-color: tomato;
 
 }
 .xy:hover{
-    transform: translate(50px, 50px)
+    transform: translate(50px, -50px);
+    transform: scale(50%);
+    background-color: brown;
 
 }
+.btn{
+    padding:1rem;
+    width:8rem;
+    background-color: gold;
+    border:none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, font-weiight 1s;
+    
+}
+.btn-div{
+    text-align: center;
+    
+}
+.btn:hover{
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    transform: scale(98%);
+}
+.btn:active{
+    transform: scale(95%);
+}
+/* iç kısma gölge box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */

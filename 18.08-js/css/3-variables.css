@@ -1,0 +1,12 @@
+@import "3-theme.css";
+
+body {
+  font-family: var(--ff-open-sans);
+}
+h1 {
+  font-family: var(--ff-dyna);
+}
+p {
+  background-color: var(--ili1);
+  font-style: var(--ff-open-);
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+/* font-family: 'DynaPuff', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+:root {
+  --mavi1: hsl(205, 100%, 30%);
+  --mavi2: hsl(205, 100%, 40%);
+  --mavi3: hsl(205, 100%, 50%);
+  --mavi4: hsl(205, 100%, 60%);
+  --mavi5: hsl(205, 100%, 70%);
+
+  /* asil renklerin acik tonları */
+  --mavi-6: hsl(205, 89%, 70%);
+  --mavi-7: hsl(205, 90%, 76%);
+  --mavi-8: hsl(205, 86%, 81%);
+  --mavi-9: hsl(205, 90%, 88%);
+  --mavi-10: hsl(205, 100%, 96%);
+  --mavi-11: hsl(205, 3%, 95%);
+
+  /* Color Theme Swatches in Hex */
+  --ili1: #d9436b;
+  --ili2: #f294ad;
+
+  color: #5ce3f2;
+
+  --ili13: hsla(185, 85, 65, 1);
+
+  --ili12: hsla(45, 85, 65, 1);
+
+  /* Color Theme Swatches in Hex */
+  --green1: #042940;
+  --green2: #005c53;
+  --green3: #9fc131;
+
+  /** Fonts */
+  --ff-dyna: "DynaPuff", cursive;
+  --ff-nunito: "Nunito", sans-serif;
+  --ff-open-sans: "Open Sans", sans-serif;
+}
