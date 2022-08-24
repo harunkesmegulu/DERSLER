@@ -1,0 +1,85 @@
+* {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  background-color: fuchsia;
+  display: flex;
+  /*! Elemanların diziliş yönü : column, row, row-reverse, column-reverse*/
+  flex-direction: row; /*! default => row*/
+
+  /*? sıkıştırma veya alt satıra geçebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+  flex-wrap: wrap;
+
+  /*! Yatay Hizalama: justify-content
+    /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+  justify-content: space-evenly;
+}
+
+.container div {
+  background-color: gold;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+}
+.container1 {
+  height: 30rem;
+  background-color: greenyellow;
+  display: flex;
+  gap: 20px 10px;
+  padding: 0, 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.container1 div {
+  background-color: tomato;
+  height: 15rem;
+  width: 5rem;
+}
+.container2 {
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0, 5rem;
+}
+.container2 div {
+  background-color: aliceblue;
+  /* width: 5rem; */
+  flex-grow: 1;
+}
+div.grow2 {
+  flex-grow: 2;
+}
+div.nogrow {
+  flex-grow: 0;
+}
+.container3 {
+  background-color: lightcoral;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0, 5rem;
+}
+.container3 div {
+  background-color: lightblue;
+}
+div.div1 {
+  width: 10%;
+}
+div.div2 {
+  width: 20%;
+}
+div.div3 {
+  width: 30%;
+}
+div.div4 {
+  width: 40%;
+  /* div vermezsen content kadar alan kaplar. */
+}
