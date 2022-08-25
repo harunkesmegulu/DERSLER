@@ -1,0 +1,54 @@
+* {
+  border: 10px solid BLACK;
+}
+
+.container {
+  margin: auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat();
+  /* grid-template-rows: repeat(5); */
+  gap: 20px;
+  height: 100vh;
+  /* grid-auto-rows: 200px; */
+}
+
+.header {
+  grid-row: 1;
+  grid-column: 1/5; /* 1 ile 5 arası*/
+  background-color: rgb(138, 19, 39);
+}
+
+.sidebar {
+  grid-row: 2/6;
+  grid-column: 4;
+  background-color: aquamarine;
+}
+
+.box1 {
+  grid-row: 2/5; /* 2 ile 5 arası*/
+  grid-column: 1;
+  background-color: blue;
+}
+.box2 {
+  grid-row: 2/5;
+  grid-column: 2;
+  background-color: coral;
+}
+.box3 {
+  grid-row: 2/5; /* 2den başlayıp 5 e kadar*/
+  grid-column: 3;
+  background-color: crimson;
+}
+
+.main {
+  grid-column: 1/4;
+  grid-row: 5;
+  background-color: teal;
+}
+
+.footer {
+  grid-column: 1/5;
+  grid-row: 6;
+  background-color: darkorange;
+}
