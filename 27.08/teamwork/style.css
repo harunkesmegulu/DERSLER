@@ -29,7 +29,7 @@ header .prg {
   height: 80rem;
   display: grid;
   grid-template-columns: 28rem 28rem 28rem;
-  grid-template-rows: 32rem 32rem 32rem;
+  grid-template-rows: 32rem 32rem;
   background-color: #f4f4f4;
   gap: 1rem 1rem;
   padding: 0.1rem 8rem 6rem 8rem;
@@ -74,6 +74,75 @@ img {
   font-size: 1vh;
 }
 
-@media screen and (max-width: 1250px) {
-  header
+@media screen and (max-width: 1300px) {
+  header {
+    display: block;
+    flex-wrap: wrap;
+    width: 50rem;
+    height: 10rem;
+    line-height: 1, 5rem;
+    margin: 4rem;
+  }
+  header div {
+    width: 50rem;
+  }
+  header .prg {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .container {
+    width: 65rem;
+    height: 120rem;
+    display: grid;
+    grid-template-columns: 28rem 28rem;
+    grid-template-rows: 32rem 32rem 32rem;
+    background-color: #f4f4f4;
+    gap: 1rem 1rem;
+    padding: 0.1rem 5rem 3rem 5rem;
+  }
+  .content5 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .content4,
+  .content6 {
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+  }
+}
+@media screen and (min-width: 900) {
+  header {
+    display: block;
+    flex-wrap: wrap;
+    width: 20rem;
+    height: 10rem;
+    line-height: 1, 5rem;
+    margin: 4rem;
+  }
+  header div {
+    width: 50rem;
+  }
+  header .prg {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    /* }
+  .container {
+    width: 65rem;
+    height: 120rem;
+    display: grid;
+    grid-template-columns: 28rem 28rem;
+    grid-template-rows: 32rem 32rem 32rem;
+    background-color: #f4f4f4;
+    gap: 1rem 1rem;
+    padding: 0.1rem 5rem 3rem 5rem;
+  }
+  .content5 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .content4,
+  .content6 {
+    margin-top: 5rem;
+    margin-bottom: -5rem; */
+  }
 }
