@@ -5,24 +5,24 @@
 }
 header {
   width: 100rem;
-  background-color: whitesmoke;
+  height: 10rem;
+  background-color: rgb(224, 224, 224);
   display: flex;
   grid-column: 50rem 50rem;
 }
 header div {
   width: 100rem;
-  height: 2rem;
   text-orientation: sideways;
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
 header h1 {
-  padding-top: 2rem;
+  padding-top: 4rem;
   text-align: center;
 }
 header .prg {
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .container {
   width: 100rem;
@@ -30,13 +30,17 @@ header .prg {
   display: grid;
   grid-template-columns: 28rem 28rem 28rem;
   grid-template-rows: 32rem 32rem 32rem;
-  background-color: whitesmoke;
+  background-color: #f4f4f4;
   gap: 1rem 1rem;
-  padding: 6rem;
+  padding: 0.1rem 8rem 6rem 8rem;
 }
 .duty {
   text-transform: uppercase;
   writing-mode: vertical-rl;
+}
+.name {
+  font-size: large;
+  font-weight: 800;
 }
 .image {
   width: 24rem;
@@ -70,5 +74,6 @@ img {
   font-size: 1vh;
 }
 
-@media screen {
+@media screen and (max-width: 1250px) {
+  header
 }
