@@ -11,6 +11,16 @@ header {
 header div {
   width: 50%;
   height: 10rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+header h1 {
+  padding-top: 4rem;
+  text-align: center;
+}
+header .prg {
+  padding-top: 4rem;
 }
 .container {
   display: grid;
