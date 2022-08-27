@@ -74,7 +74,7 @@ img {
   font-size: 1vh;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 900px) and (max-width: 1300px) {
   header {
     display: block;
     flex-wrap: wrap;
@@ -110,39 +110,41 @@ img {
     margin-bottom: -5rem;
   }
 }
-@media screen and (min-width: 900) {
+@media screen and (min-width: 0) and (max-width: 900px) {
   header {
     display: block;
     flex-wrap: wrap;
-    width: 20rem;
-    height: 10rem;
+    width: 40rem;
+    height: 12rem;
     line-height: 1, 5rem;
-    margin: 4rem;
+    margin: 1rem;
   }
   header div {
-    width: 50rem;
+    width: 40rem;
   }
   header .prg {
     padding-top: 1rem;
     padding-left: 2rem;
-    /* }
+  }
   .container {
-    width: 65rem;
-    height: 120rem;
+    width: 40rem;
+    height: 210rem;
+    margin: 1rem;
     display: grid;
-    grid-template-columns: 28rem 28rem;
-    grid-template-rows: 32rem 32rem 32rem;
+    grid-template-columns: 28rem;
+    grid-template-rows: 32rem 32rem 32rem 32rem 32rem 32rem;
     background-color: #f4f4f4;
     gap: 1rem 1rem;
     padding: 0.1rem 5rem 3rem 5rem;
   }
-  .content5 {
+  .content2 {
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
   .content4,
+  .content5,
   .content6 {
-    margin-top: 5rem;
-    margin-bottom: -5rem; */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
 }
