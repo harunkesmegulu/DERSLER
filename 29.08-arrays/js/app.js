@@ -5,14 +5,14 @@ const arr = ["ahmet", "mehmet", "fatih"];
 const a = [3];
 console.log(a.length);
 
-const numbers1 = new Array(10);
-console.log(numbers1.length);
+const numbers11 = new Array(10);
+console.log(numbers11.length);
 
 const veriler = Array.of(1, 2, 3);
 console.log(veriler);
 
-const go = arr[1];
-console.log(go);
+const go1 = arr[1];
+console.log(go1);
 
 console.log(arr[arr.length - 1]);
 console.log(arr.at(-1));
@@ -26,15 +26,15 @@ console.log(veriler);
 veriler[veriler.length-2]=+1;
 console.log(veriler);
 
-const numbers = [1, 2, 3, 4];
-console.log(numbers);
-veriler[numbers.length -1 ]++;
-console.log(numbers);
-veriler[numbers.length-2]++;
-console.log(numbers);
+const numbers3 = [1, 2, 3, 4];
+console.log(numbers3);
+veriler[numbers3.length -1 ]++;
+console.log(numbers3);
+veriler[numbers3.length-2]++;
+console.log(numbers3);
 
-const yaslar = [22, 33, 44];
-const icerik = ["aHMET", "Mehmet", 3, 4, 5, 2022-1990, true, yaslar ]
+const yaslar1 = [22, 33, 44];
+const icerik = ["aHMET", "Mehmet", 3, 4, 5, 2022-1990, true, yaslar1 ]
 
 const yas22 = icerik[8][2];
 console.log(yas22);
