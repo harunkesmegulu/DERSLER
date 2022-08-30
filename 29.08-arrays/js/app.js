@@ -36,8 +36,8 @@ console.log(numbers3);
 const yaslar1 = [22, 33, 44];
 const icerik = ["aHMET", "Mehmet", 3, 4, 5, 2022-1990, true, yaslar1 ]
 
-const yas22 = icerik[8][2];
-console.log(yas22);
+// const yas22 = icerik[8][2];
+// console.log(yas22);
 
 
 console.log("***** ARRAYS ******");
@@ -66,8 +66,8 @@ const numbers1 = new Array(10);
 console.log(numbers1);
 
 // ! 3.Yöntem (Array.of())
-const veriler = Array.of(1, 2, 3);
-console.log(veriler);
+const veriler1 = Array.of(1, 2, 3);
+console.log(veriler1);
 
 const veri = Array.of("Deneme");
 console.log(veri);
@@ -181,7 +181,7 @@ const sayilar1 = [3, 5, 2, "2", "uc", 2, "3", "bes", "5"];
 //* includes()
 //*-----------------------------------------------------------
 console.log(sayilar1.includes(5)); //? true
-console.log(sayilar1.includes("5")); //? false
+console.log(sayilar1.includes("5")); //? false, true now
 
 //* indexOf(), lastIndexOf();
 //*-----------------------------------------------------------
