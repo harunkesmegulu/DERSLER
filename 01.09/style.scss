@@ -11,13 +11,35 @@ $bannerBgColor: hotpink;
 
 body {
     font-family: $fontFamily;
-    background-color: $nabBgColor;
+    background-color: $bannerBgColor;
     font-size: $fontSize;
     color: $fontColor;
 }
 
 header{
+    background-color: $nabBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     img{
         width: 80px;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            padding: 0.5rem;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        // li:hover{
+        //     text-decoration: underline;
+        // }
+    }
+    a{
+        color: $fontColor;
+        text-decoration: none;
+        
     }
 }
