@@ -3,6 +3,14 @@
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fontSize:1.2rem;
+$fontColor: white;
+$nabBgColor: #30a7c3;
+$fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$bannerBgColor: hotpink;
+
+body {
+    font-family: $fontFamily;
+    background-color: $nabBgColor;
+    
 }
