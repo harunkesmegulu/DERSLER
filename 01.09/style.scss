@@ -12,5 +12,12 @@ $bannerBgColor: hotpink;
 body {
     font-family: $fontFamily;
     background-color: $nabBgColor;
-    
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+header{
+    img{
+        width: 80px;
+    }
 }
