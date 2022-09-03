@@ -1,0 +1,7 @@
+.abaut-bgImg-container{
+    @include bgTmage(50vh, $main-bgImage-path);
+    diplay:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .abaut__bio
+}
