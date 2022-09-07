@@ -258,5 +258,16 @@ const teamFullName = team.map(p =>({
 p.surname.toUpperCase(), age: p.age + 5,
 }));
 
-
+//****22 yasından kucuk ve esıt olanların adlarını lıstele. */
 team.filter((p) => p.age <= 22).forEach((p) => console.log(p.name))
+
+//****22 yasından kucuk ve esıt olanların ısımlarını dızıye saklayınız. */
+
+
+const teamUnder22 = team.filter((x) => x.age <= 22).map((p) => p.name);
+console.log(teamUnder22);
+
+//*****ortalama yaşı bul */
+
+const avgAges = team.reduce((sum,person) => (sum += person.age), 0) / team.length;
+console.log(avgAges);
