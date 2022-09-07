@@ -346,7 +346,7 @@ team.forEach((p) => {
     console.log("Age:", p.age);
   });
   
-  //* DESTRUCTURING
+  //* DESTRUCTURING (önce tanımladığımız için p.name şeklinde çağırmamıza gerek kalmıyor. Bundan sonra bu yöntem kullanacağım...)
   team.forEach((p) => {
     const { name, surname, job, age } = p;
     console.log("****************");
