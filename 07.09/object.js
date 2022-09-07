@@ -228,11 +228,11 @@ Object.values(people)
 //********************************************************
 //* JSON => Javascript Object Notation
 //********************************************************
-const team = [
-  { name: "Josh", surname: "Adams", job: "developer", age: 30 },
-  { name: "Mary", surname: "Bary", job: "tester", age: 22 },
-  { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
-]; //* JSON
+// const team = [
+//   { name: "Josh", surname: "Adams", job: "developer", age: 30 },
+//   { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+//   { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+// ]; //* JSON
 
 console.log(team);
 console.log(team[2]);
@@ -267,7 +267,103 @@ team.filter((p) => p.age <= 22).forEach((p) => console.log(p.name))
 const teamUnder22 = team.filter((x) => x.age <= 22).map((p) => p.name);
 console.log(teamUnder22);
 
-//*****ortalama yaşı bul */
+//*****ortalama yaşı bul */ //*? ssoru işareti veri varsa işleme sokar, çünkü eğer veri yoksa sonuç veri undifind olduğu için nun olarak döner.
 
-const avgAges = team.reduce((sum,person) => (sum += person.age), 0) / team.length;
+const avgAges = team.reduce((sum,person) => (sum += person?.age?), 0) / team.length;
 console.log(avgAges);
+
+//* ======================================================
+//*  DESTRUCTURING (OBJECT)
+//* ======================================================
+console.log("****** NEW OPERATORS *******");
+
+const car = {
+    name: "BMW",
+    model: 1990,
+    engine: 1.6,
+    colors: ["blue", "purple"],
+  };
+  
+  //* 1.YONTEM (Classical)
+  const name1 = car.name;
+  const model1 = car["model"];
+  
+  //* 2.YONTEM: DESTRUCTURING
+  
+  const { name: carName, colors, model, engine } = car;
+  console.log(carName, model, engine, colors);
+  
+  //* EXAMPLE: NESTED
+  const cars = {
+    car1: {
+      name: "BMW",
+      model: 1990,
+      engine: 1.6,
+    },
+    car2: {
+      name: "Mercedes",
+      model: 2022,
+      engine: 2.0,
+    },
+  };
+  
+  const { car1, car2 } = cars;
+  console.log(car1);
+  
+  const { name: c1Name, model: c1Model } = car1;
+  const { name: c2Name, model: c2Model } = car2;
+  
+  console.log(c1Name, c2Name);
+  
+  //* Example
+  const team = [
+    {
+      name: "Josh",
+      surname: "Barry",
+      job: "developer",
+      age: 30,
+    },
+    {
+      name: "Josh",
+      surname: "Barry",
+      job: "tester",
+      age: 45,
+    },
+    {
+      name: "Hazel",
+      surname: "Nut",
+      job: "team lead",
+      age: 40,
+    },
+  ];
+
+  //* Classical
+team.forEach((p) => {
+    console.log("****************");
+    console.log("Name:", p.name);
+    console.log("Surname:", p.surname);
+    console.log("Job:", p["job"]);
+    console.log("Age:", p.age);
+  });
+  
+  //* DESTRUCTURING
+  team.forEach((p) => {
+    const { name, surname, job, age } = p;
+    console.log("****************");
+    console.log("Name:", name);
+    console.log("Surname:", surname);
+    console.log("Job:", job);
+    console.log("Age:", age);
+  });
+  
+  
+//*  DESTRUCTURING (ARRAY)
+//* ======================================================
+
+//*======================================================
+//*  REST (...)
+//* ======================================================
+
+//*======================================================
+//*  SPREAD (...)
+//* ======================================================
