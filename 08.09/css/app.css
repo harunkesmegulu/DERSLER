@@ -17,7 +17,24 @@
   }
   
   /*! ------------- 2- CAROUSEL --------------- */
-  
+  .carousel-item h5{
+    color: var(--red);
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 3px black;
+  }
+  .corousel-item p{
+    text-shadow: 3px 3px 3px black;
+    font-weight: 600;
+  }
+  .carousel-item .btn{
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
+  .carousel-item img,
+.carousel-item {
+  max-height: calc(100vh - 88px);
+}
+
   /*! ------------ 3- ABOUT SECTION ----------- */
   
   /*! ------------- 4- INSTRUCTORS -------------*/
