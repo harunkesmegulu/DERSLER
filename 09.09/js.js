@@ -41,3 +41,12 @@ const ogrenciler = [
 ; console.log(ogrenciler.find((numarası) => numarası.num > 3));
 //* Çıktı ==> {id: 1, name: 'Murat', num: 22}. İlk bulduğu anda işlem durdu ve sonucu yazdırdı
 
+//*** 2. includes()
+//! includes() metodu ile dizinin belirli bir elemanı içerip içermediğini belirleyebiliriz. Eğer dizi bu değeri içeriyorsa TRUE, içermiyorsa FALSE değeri döndürür.
+​
+//? ÖRNEK
+let arabalar = ["Tofaş", "Anadol", "Bugatti"];
+​
+console.log(arabalar.includes("Tofaş")); //* Çıktı ==> true
+​
+console.log(arabalar.includes("Ferrari")); //* Çıktı ==> false
