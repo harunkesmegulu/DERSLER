@@ -50,3 +50,15 @@ let arabalar = ["Tofaş", "Anadol", "Bugatti"];
 console.log(arabalar.includes("Tofaş")); //* Çıktı ==> true
 ​
 console.log(arabalar.includes("Ferrari")); //* Çıktı ==> false
+
+//*** 3. filter()
+//! filter() metodu sayesinde belirlediğimiz şarta göre tüm dizi elemanlarını kontrol eden ve şartı sağlayan dizi elemanlarıyla yeni bir dizi oluşturmayı sağlayabiliriz.
+​
+//? ÖRNEK
+const sayılar = [1, 2, 3, 4, 5, 6, 7];
+​
+const filterMetodu = sayılar.filter(sayı => sayı > 4); //* Sayılar dizisindeki 4'ten büyük sayıları filtreledik.
+​
+console.log(filterMetodu); //* Çıktı ==> [5, 6, 7]
+​
+console.log(sayılar); //* Çıktı ==> [1,2,3,4,5,6,7]  dizinin orjinali değişmedi!!!
