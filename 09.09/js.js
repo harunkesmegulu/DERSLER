@@ -151,3 +151,13 @@ console.log(names); //* Çıktı ==>  ['Murat', 'Alex', 'Price']
 
 //*eğer console.log(names.splice(1,1,`Alex`) dersek. sonuçta listeden silinen ifadeekrana yazdırır. Yani sadece "Captain" sonucunu verir. ********//
 
+//*** 10. every()
+//! every() metodu dizideki bütün elemanlar girilen koşulu sağlıyorsa TRUE döndürür. Herhangi biri bu koşulu sağlamıyorsa FALSE döndürür.
+​
+//? ÖRNEK
+function kucukMu50(eleman, index, dizi) {
+    return eleman < 50;  //* Dizi elemanlarının 50'den küçük olup olmadığının kontrolünü yapıyoruz
+}
+​
+[20, 80, 94, 12, 50].every(kucukMu50);  //* Çıktı ==> false
+[49, 12, 45, 3, 26].every(kucukMu50); //* Çıktı ==> true
