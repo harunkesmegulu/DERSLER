@@ -200,3 +200,17 @@ const number = (eleman) => eleman > 20;
 ​
 console.log(array.findIndex(number)); //* Çıktı ==> 3.   20'den büyük ilk elemanın index'ini döndürdü. Yani 45'i
 
+//*** 14. entries()
+//! entries() metodu dizideki her dizin için anahtar/değer çiftlerini içeren yeni bir dizi(array) yineleme nesnesi(iterator object) döndürür.
+​
+//? ÖRNEK
+const dizi123 = ['a', 'b', 'c'];
+​
+const iterator = dizi123.entries();
+​
+console.log(iterator.next().value); //* Çıktı ==> [0, 'a']
+​
+console.log(iterator.next().value); //* Çıktı ==> [1, 'b']
+​
+console.log(iterator.next().value); //* Çıktı ==> [2, 'c']
+
