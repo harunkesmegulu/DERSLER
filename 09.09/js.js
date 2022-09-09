@@ -161,3 +161,14 @@ function kucukMu50(eleman, index, dizi) {
 ​
 [20, 80, 94, 12, 50].every(kucukMu50);  //* Çıktı ==> false
 [49, 12, 45, 3, 26].every(kucukMu50); //* Çıktı ==> true
+
+//*** 11. some()
+//! some() metodu, dizimizde bulunan elemanların en az biri belirlediğimiz kurala uyuyorsa TRUE, hiçbiri uymuyorsa FALSE değeri döndürür.
+​
+//? ÖRNEK
+function kucukMu30(eleman, index, dizi) {
+    return eleman < 30;  //* Dizi elemanlarından en az birinin 30'dan küçük olup olmadığının kontrolünü yapıyoruz
+}
+​
+[70, 80, 94, 42, 50].some(kucukMu50);  //* Çıktı ==> false
+[89, 52, 15, 3, 26].some(kucukMu50); //* Çıktı ==> true
