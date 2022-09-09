@@ -139,3 +139,15 @@ console.log(kelimeler); //* Çıktı ==>  ['armut', 'elma', 'muz', 'portakal']
 const basketbolcular = ['Lebron', 'Kobe', 'T-mac', 'Jordan'];
 ​
 console.log(basketbolcular.slice(2)); //* Çıktı ==> ['T-mac', 'Jordan']
+
+//*** 9. splice()
+//! splice() metodu diziye eleman eklemeyi ve eleman kaldırmayı sağlar.
+​
+const names = ['Murat', 'Captain', 'Price']
+​
+names.splice(1, 1, 'Alex') //* Index numarası 1 olan o elemanı siler ve yerine yazarak değiştir. eğer ikinci değer 0 sa silmeden yerine gelir ve diğerlerini kaydırır.
+​
+console.log(names); //* Çıktı ==>  ['Murat', 'Alex', 'Price']
+
+//*eğer console.log(names.splice(1,1,`Alex`) dersek. sonuçta listeden silinen ifadeekrana yazdırır. Yani sadece "Captain" sonucunu verir. ********//
+
