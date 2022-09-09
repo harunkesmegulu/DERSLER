@@ -62,3 +62,16 @@ const filterMetodu = sayılar.filter(sayı => sayı > 4); //* Sayılar dizisinde
 console.log(filterMetodu); //* Çıktı ==> [5, 6, 7]
 ​
 console.log(sayılar); //* Çıktı ==> [1,2,3,4,5,6,7]  dizinin orjinali değişmedi!!!
+
+//*** 4. concat()
+//! concat() metodu, dizileri birleştirme işlemi yapar ve birleştirilen dizilerden de yeni bir dizi oluşturur.
+​
+//? ÖRNEK
+const dizi1 = ["Murat", "Captain", "Price", true];
+​
+const dizi2 = [1, 2, "JavaScript", 3];
+​
+const dizi3 = dizi1.concat(dizi2);
+​
+console.log(dizi3); //* Çıktı ==> ['Murat', 'Captain', 'Price', true, 1, 2, 'JavaScript', 3]
+
