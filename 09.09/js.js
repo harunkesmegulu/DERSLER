@@ -131,3 +131,11 @@ kelimeler.sort(); //* alfabetik olarak sıraladık
 console.log(kelimeler); //* Çıktı ==>  ['armut', 'elma', 'muz', 'portakal']
 ​
 //**************************************************************************************************************************** */
+
+//*** 8. slice()
+//! slice() metodu, dizinin bir bölümünü seçer ve yeni diziyi döndürür.(Bu dizi içerisinde başlangıç ve son arasında(!!!SON DAHİL DEĞİL!!!) tüm elemanları kopyalar.)
+​
+//? ÖRNEK
+const basketbolcular = ['Lebron', 'Kobe', 'T-mac', 'Jordan'];
+​
+console.log(basketbolcular.slice(2)); //* Çıktı ==> ['T-mac', 'Jordan']
