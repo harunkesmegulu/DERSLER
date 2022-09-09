@@ -88,3 +88,20 @@ console.log(isimler); //* Çıktı ==> ['Murat', 'Captain', 'Price', 'Messi']
 isimler.push(`Ronaldo`, `Alex`);
 ​
 console.log(isimler); //* Çıktı ==> ['Murat', 'Captain', 'Price', 'Messi', 'Ronaldo', 'Alex']
+
+//*** 6. join()
+//! join() metodu, bir dizinin (veya dizi benzeri bir nesnenin(object)) tüm öğelerini(elemanlarını) belirtilen düzende string olarak birleştirir.
+​
+//? ÖRNEK
+const adlar = ["Murat", "Captain", "Price"];
+​
+console.log(adlar.join('*')); //* Çıktı ==> Murat*Captain*Price
+​
+console.log(adlar.join('-')); //* Çıktı ==> Murat-Captain-Price
+​
+console.log(adlar.join()); //* Çıktı ==> Murat,Captain,Price
+​
+console.log(adlar.join(" ")); //* Çıktı ==> Murat Captain Price
+​
+console.log(adlar.join("")); //* Çıktı ==> MuratCaptainPrice
+
