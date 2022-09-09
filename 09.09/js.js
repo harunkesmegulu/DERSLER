@@ -104,4 +104,30 @@ console.log(adlar.join()); //* Çıktı ==> Murat,Captain,Price
 console.log(adlar.join(" ")); //* Çıktı ==> Murat Captain Price
 ​
 console.log(adlar.join("")); //* Çıktı ==> MuratCaptainPrice
-
+//**************************************************************************************************************************** */
+//*** 7. sort()
+//! sort() metodu, bir dizinin elemanlarını sıralar ve dizinin sıralanmış halini aynı diziye atar.
+​
+//? ÖRNEK
+const arr = [1, 2, 5, 7, 545, 14, 65, 32, 1000000];
+​
+arr.sort();
+console.log(arr); //* Çıktı ==> [1, 1000000, 14, 2, 32, 5, 545, 65, 7]
+​
+//! UYARI: sort() metodu içine herhangi bir fonksiyon almazsa UTF-16 kod birimine göre sıralama yapar. Yani 16 bitlik kod birimiyle.
+//! Sayılarda düzgün bir sıralama yapmak için şunu yapabiliriz.
+​
+//? ÖRNEK
+arr.sort((a, b) => a - b) //* Küçükten büyüğe sıraladık
+console.log(arr); //* Çıktı ==> [1, 2, 5, 7, 14, 32, 65, 545, 1000000]
+​
+arr.sort((a, b) => b - a) //* Büyükten küçüğe sıraladık
+console.log(arr); //* Çıktı ==> [1000000, 545, 65, 32, 14, 7, 5, 2, 1]
+​
+//?STRİNG İFADELER İÇİN ÖRNEK
+const kelimeler = ['elma', 'armut', 'portakal', 'muz'];
+​
+kelimeler.sort(); //* alfabetik olarak sıraladık
+console.log(kelimeler); //* Çıktı ==>  ['armut', 'elma', 'muz', 'portakal']
+​
+//**************************************************************************************************************************** */
