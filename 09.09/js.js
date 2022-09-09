@@ -214,3 +214,15 @@ console.log(iterator.next().value); //* Çıktı ==> [1, 'b']
 ​
 console.log(iterator.next().value); //* Çıktı ==> [2, 'c']
 
+//*** 15. map()
+//! map() metodu, bir dizide değişiklik yaparak yeni bir dizi oluşturmamızı sağlar. Dikkat etmemiz gereken en önemli kısım eski dizide yani orjinal dizide hiçbir değişikliğin olmamasıdır.
+​
+//? ÖRNEK
+const sayilar = [1, 3, 5, 7, 9]
+​
+//* Her elemanı 3 ile çarpıyoruz
+const yeniDizi = sayilar.map(sayı => sayı * 3);
+​
+console.log(yeniDizi); //* Çıktı ==> [3, 9, 15, 21, 27]
+​
+console.log(sayilar); //* Çıktı ==> [1, 3, 5, 7, 9]
