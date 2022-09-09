@@ -172,3 +172,18 @@ function kucukMu30(eleman, index, dizi) {
 ​
 [70, 80, 94, 42, 50].some(kucukMu50);  //* Çıktı ==> false
 [89, 52, 15, 3, 26].some(kucukMu50); //* Çıktı ==> true
+
+//*** 12. reduce()
+//! reduce() metodu dizinin her değeri için bir işlev yürütür ve sonunda diziyi tek bir değere dönüştürür. Reduce metodunun dönüş değeri, ilk parametresi olan (aşağıdaki örnekte) ilkParametre'de saklanır.
+​
+//? ÖRNEK
+const numberNumber = [6, 5, 4];
+​
+const reduceMetoduOrnek = (ilkParametre, anlıkDeğer) => ilkParametre * anlıkDeğer;
+​
+//* 6 * 5 * 4 işlemini yapacak
+console.log(numberNumber.reduce(reduceMetoduOrnek)); //* Çıktı ==> 120
+​
+//* 10 * 6 * 5 * 4 işlemini yapacak
+console.log(numberNumber.reduce(reduceMetoduOrnek, 10)); //* Çıktı ==> 1200
+
