@@ -186,4 +186,17 @@ console.log(numberNumber.reduce(reduceMetoduOrnek)); //* Çıktı ==> 120
 ​
 //* 10 * 6 * 5 * 4 işlemini yapacak
 console.log(numberNumber.reduce(reduceMetoduOrnek, 10)); //* Çıktı ==> 1200
+//**************************************************************************************************************** */
+
+
+//*** 13. findIndex()
+//! findIndex() metodu, test işlevini karşılayan ilk öğenin dizinini döndürür. Eğer hiçbir öğe test işlevini karşılamazsa sonucu -1 olarak döner.
+​
+//? ÖRNEK
+const array = [6, 17, 2, 45, 61];
+​
+//* 20'den büyük elemanı bulmak istiyoruz
+const number = (eleman) => eleman > 20;
+​
+console.log(array.findIndex(number)); //* Çıktı ==> 3.   20'den büyük ilk elemanın index'ini döndürdü. Yani 45'i
 
