@@ -28,3 +28,16 @@ for(let key in myCar){
 13; findIndex();
 14; entries();
 15; map();
+//*** 1. find()
+//! find() metodu, dizide bir elemanı bulmayı sağlar ve bu elemanı bulduğu anda arama işlemi durdurarak bulunan elemanı döndürür.
+​
+//? ÖRNEK
+const ogrenciler = [
+    { id: 1, name: "Murat", num: 22 },
+    { id: 2, name: "Captain", num: 33 },
+    { id: 3, name: "Price", num: 44 }
+];
+​
+; console.log(ogrenciler.find((numarası) => numarası.num > 3));
+//* Çıktı ==> {id: 1, name: 'Murat', num: 22}. İlk bulduğu anda işlem durdu ve sonucu yazdırdı
+
