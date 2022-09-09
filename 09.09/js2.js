@@ -1,35 +1,6 @@
 
 
-​
-//*** 3. filter()
-//! filter() metodu sayesinde belirlediğimiz şarta göre tüm dizi elemanlarını kontrol eden ve şartı sağlayan dizi elemanlarıyla yeni bir dizi oluşturmayı sağlayabiliriz.
-​
-//? ÖRNEK
-const sayılar = [1, 2, 3, 4, 5, 6, 7];
-​
-const filterMetodu = sayılar.filter(sayı => sayı > 4); //* Sayılar dizisindeki 4'ten büyük sayıları filtreledik.
-​
-console.log(filterMetodu); //* Çıktı ==> [5, 6, 7]
-​
-console.log(sayılar); //* Çıktı ==> [1,2,3,4,5,6,7]  dizinin orjinali değişmedi!!!
-​
-​
-​
-////////////////////////////////////////////////////////////////////////////////////////////////////////TODO
-​
-​
-//*** 4. concat()
-//! concat() metodu, dizileri birleştirme işlemi yapar ve birleştirilen dizilerden de yeni bir dizi oluşturur.
-​
-//? ÖRNEK
-const dizi1 = ["Murat", "Captain", "Price", true];
-​
-const dizi2 = [1, 2, "JavaScript", 3];
-​
-const dizi3 = dizi1.concat(dizi2);
-​
-console.log(dizi3); //* Çıktı ==> ['Murat', 'Captain', 'Price', true, 1, 2, 'JavaScript', 3]
-​
+
 ​
 ​
 ////////////////////////////////////////////////////////////////////////////////////////////////////////TODO
