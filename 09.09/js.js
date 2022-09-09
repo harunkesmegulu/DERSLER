@@ -75,3 +75,16 @@ const dizi3 = dizi1.concat(dizi2);
 ​
 console.log(dizi3); //* Çıktı ==> ['Murat', 'Captain', 'Price', true, 1, 2, 'JavaScript', 3]
 
+//*** 5. push()
+//! push() metodu, dizinin sonuna bir veya daha fazla öğe(eleman) ekler ve dizinin yeni halini döndürür.
+​
+//? ÖRNEK
+const isimler = ["Murat", "Captain", "Price"];
+​
+isimler.push(`Messi`);
+​
+console.log(isimler); //* Çıktı ==> ['Murat', 'Captain', 'Price', 'Messi']
+​
+isimler.push(`Ronaldo`, `Alex`);
+​
+console.log(isimler); //* Çıktı ==> ['Murat', 'Captain', 'Price', 'Messi', 'Ronaldo', 'Alex']
