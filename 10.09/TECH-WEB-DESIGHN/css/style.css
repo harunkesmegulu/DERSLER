@@ -1,0 +1,30 @@
+/*!----------NAVBAR ----->*/
+/*!----------FIRST SECTON ----->*/
+.card {
+    background-image: url(../img/banner.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-img-overlay{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .h,
+  .p{
+      color:chocolate ;
+  }
+  .btn{
+      width: 10rem;
+      height: 3rem;
+  }
+/*!----------NAVBAR ----->*/
+/*!----------NAVBAR ----->*/
+/*!----------NAVBAR ----->*/
+/*!----------NAVBAR ----->*/
+/*!----------NAVBAR ----->*/
+/*!----------NAVBAR ----->*/
+/*!----------NAVBAR ----->*/
+/*!----------NAVBAR ----->*/
