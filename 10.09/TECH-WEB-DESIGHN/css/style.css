@@ -45,7 +45,23 @@
     border: none;
 
 }
-/*!----------NAVBAR ----->*/
+/*!----------OUR TEAM ----->*/
+.team img {
+width: 250px;
+border: 10px solid #CCCCCC;
+border-radius: 50%;
+}
+.team a {
+display: inline-block;
+/* width: 40px;
+height: 40px; */
+border-radius: 50%;
+background-color: #333333;
+color: white;
+}
+.team i {
+padding: 1rem;
+}
 /*!----------NAVBAR ----->*/
 /*!----------NAVBAR ----->*/
 /*!----------NAVBAR ----->*/
