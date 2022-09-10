@@ -62,8 +62,16 @@ color: white;
 .team i {
 padding: 1rem;
 }
-/*!----------NAVBAR ----->*/
-/*!----------NAVBAR ----->*/
+/*!----------SECONDARY NAVBAR ----->*/
+.second img {
+    max-height: 50px;
+  }
+  .ss {
+    display: flex;
+    flex-wrap: wrap;
+  }
+/*!----------CONTACT US ----->*/
+
 /*!----------NAVBAR ----->*/
 /*!----------NAVBAR ----->*/
 /*!----------NAVBAR ----->*/
