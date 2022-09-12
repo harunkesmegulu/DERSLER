@@ -52,9 +52,19 @@ list.forEach((li) => {
   };
 });
 
-const print = () => {
-  console.log("Starting");
+// const print = () => {
+//   console.log("Starting");
+// };
+
+
+//* EXAMPLE-3
+
+window.onload = function (){
+    document.querySelector("#input").focus();
 };
+const print = () => {
+    console.log("starting");
+}
 
 
 print();
