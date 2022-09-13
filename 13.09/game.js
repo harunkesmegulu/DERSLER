@@ -58,6 +58,18 @@ document.querySelector(".check-btn").addEventListener("click", () => {
 
 });
 
+//* again basildiginda oyunu baslangic dgerlerin kur
+document.querySelector(".again-btn").addEventListener("click", () => {
+    score = 10;
+    document.querySelector(".score").textContent = score;
+    randomNumber = Math.round(Math.random() * 100);
+    document.querySelector(".secret-number").textContent = "?";
+    console.log(randomNumber);
+    document.querySelector(".check-btn").disabled = false;
+    document.querySelector("body").classList.remove("bg-success", "bg-danger");
+    document.querySelector(".guess-input").value = "";
+    document.querySelector(".msg").innerText = `Starting..`;
+  });
   
 
 //** eğer rasgele == input.value (tebrikler) background rengi yeşil....eger top score > topScore topscore = score secret-number visible*/
