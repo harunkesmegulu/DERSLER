@@ -28,7 +28,7 @@ document.querySelector(".check-btn").addEventListener("click", () => {
       msg.innerText = "Please enter a number";
       //! eger rasgele == input.value
     } else if (randomNumber === guessInput) {
-      msg.innerHTML = `Congrats You Win <i class="fa-solid fa-face-grin-hearts fa-2x"></i> `;
+      msg.innerHTML = `Congratulations You Win ✨ <i class="fa-solid fa-face-grin-hearts fa-2x"></i> `;
       body.className = "bg-success";
       document.querySelector(".check-btn").disabled = true;
       if (score > topScore) {
