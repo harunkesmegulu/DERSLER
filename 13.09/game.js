@@ -8,26 +8,55 @@
 const randomNumber = Math.floor(Math.random() * 100) +1;
 console.log(randomNumber);
 
+// let randomNumber = Math.round(Math.random() * 100);
+// console.log(randomNumber); //***bu şekide de olur */
+
+//? Variables
+let score = 10;
+let topScore = 0;
+
 //** check butonu basıldığında girilen sayıyı kontrel et */
-document. querySelector(".check-btn").addEventListener("click", () => {
+
+
+document.querySelector(".check-btn").addEventListener("click", () => {
     const guessInput = Number(document.querySelector(".guess-input").value);
-    // console.log(guessInput)
     const msg = document.querySelector(".msg");
+    const body = document.querySelector("body");
+  
+    //? eger input girilmediyse Kullaniciya uyari ver.
+    if (!guessInput) {
+      msg.innerText = "Please enter a number";
+      //! eger rasgele == input.value
+    } else if (randomNumber === guessInput) {
+      msg.innerHTML = `Congrats You Win <i class="fa-solid fa-face-grin-hearts fa-2x"></i> `;
+      body.className = "bg-success";
+      document.querySelector(".check-btn").disabled = true;
+      if (score > topScore) {
+        topScore = score;
+        document.querySelector(".top-score").textContent = topScore;
+      }
+      document.querySelector(".secret-number").textContent = randomNumber;
 
-
-
-    //** eğer sayı girilmediyse kullanıcıya uyarı ver */
-    
-if (!guessInput){
-    msg.innerText = "Please enter a number";
-    }else if (randomNumber === guessInput) {
-        msg.innerText = `Congragulation You Win 😍 <i class="fa-regular fa-face-awesome"></i> `;
-        body.className = "bg-success";
+        //! eger rasgele!= input.value
+  } else {
+    score--;
+    if (score > 0) {
+      guessInput > randomNumber
+        ? (msg.innerHTML = `<i class="fa-solid fa-arrow-trend-down fa-2x"></i> DECREASE `)
+        : (msg.innerHTML = `<i class="fa-solid fa-arrow-trend-up fa-2x"></i> INCREASE `);
+    } else {
+      msg.innerHTML = `You Lost <i class="fa-regular fa-face-sad-tear fa-2x"></i>`;
+      document.querySelector(".secret-number").textContent = randomNumber;
+      body.className = "bg-danger";
+      document.querySelector(".check-btn").disabled = true;
     }
 
+    document.querySelector(".score").textContent = score;
+  }
 
 
-})
+
+});
 
   
 
