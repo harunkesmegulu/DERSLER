@@ -19,7 +19,7 @@ const listJQ = $(".cities").eq(0);
 //window.onload = () =>{} ===> JS
 // addEventListener ===> on
 
-$(window).on("load", ()=>{
+$(window).on("load", () => {
     console.log("window.load");
 });
 
@@ -29,27 +29,106 @@ $(window).on("load", ()=>{
 //     console.log("DOMContentLoaded");
 // });
 
-$(document).ready(()=>{
+$(document).ready(() => {
     console.log("DOMContentLoaded");
-    localStorage.setItem("apiKey, EncryptStringAES ("2ab8debec704a8f127273360e53f0507");
+    localStorage.setItem("apiKey", EncryptStringAES("4d8fb5b93d4af21d66a2948710284366"));
 });
-const getWeatherDataFormApi=() =>{
-    
-}
 
 // formJquery.on("submit", (e)=>{
 //     e.preventDefault();
 //     getWeatherDataFromApi();
 // });
 
-formJquery.submit((e)=>{
+formJquery.submit((e) => {
     e.preventDefault();
     getWeatherDataFromApi();
 });
 
 
-const getWeatherDataFromApi = () =>{
-    console.log("AJAX Func. is called");
-}
+const getWeatherDataFromApi = async () => {
+    //console.log("AJAX Func. is called");
+    const apiKey = DecryptStringAES(localStorage.getItem("apiKey"));
+    //JS .value == jQUERY .val()
+    const cityName = inputJQ.val();
+    console.log(cityName);
+    const units = "metric";
+    const lang = "tr";
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=${units}&lang=${lang}`;
 
-// XMLHTTPREQUEST(xhr) vs. fetch() vs. axios vs. $.ajax
+    // XMLHttpRequest(xhr) vs. fetch() vs. axios vs. $.ajax
+
+    $.ajax({
+        type: "GET",
+        url: url,
+        dataType: "json",
+        success: (response) => {
+            //main body func.
+            console.log(response);
+            const { main, sys, name, weather } = response;
+            const iconUrlAWS = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0].icon}.svg`;
+            //alternative iconUrl
+            const iconUrl = `https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
+
+            //js=>document.createElement("li")
+
+            // const createdLi2 = $(document.createElement("li"))
+
+            //weather card control!!
+
+            const cityCardList = listJQ.find(".city");
+            const cityCardListArray = cityCardList.get();
+
+            //console.log(cityCardList);
+            if (cityCardListArray.length > 0) {
+                const filteredArray =
+                    cityCardListArray
+                        .filter(
+                            li => $(li).find("span").text() == name
+                        );
+                if (filteredArray.length > 0) {
+                    //innerText
+                    msgJQ.text(`You already know the weather for ${name}, Please search for another city 😉`);
+                    //styling
+                    msgJQ.css({ "color": "red", "text-decoration": "underline" });
+                    return;
+                }
+            }
+
+            const createdLi = $('<li></li>');
+            createdLi.addClass("city");
+            createdLi.html(`
+            <h2 class="city-name" data-name="${name}, ${sys.country}">
+                <span>${name}</span>
+                <sup>${sys.country}</sup>
+            </h2>
+            <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+            <figure>
+                <img class="city-icon" src="${iconUrl}">
+                <figcaption>${weather[0].description}</figcaption>
+            </figure>`);
+
+            //append vs. prepend both in JS AND JQUERY
+            listJQ.prepend(createdLi);
+            //formJS.reset();
+            formJquery.trigger("reset");
+
+        },
+        beforeSend: (request) => {
+            console.log("before ajax send");
+        },
+        complete: () => {
+            console.log("after ajax send");
+        },
+        error: (XMLHttpRequest) => {
+            //logging
+            //postErrorLog(p1,p2,p3,p4);
+            console.log(XMLHttpRequest);
+            msgJQ.text(`${XMLHttpRequest.status} ${XMLHttpRequest.statusText}`);
+            //styling
+            msgJQ.css({ "color": "red", "text-decoration": "underline" });
+        }
+    });
+
+
+
+}
