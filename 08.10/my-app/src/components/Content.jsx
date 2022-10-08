@@ -11,18 +11,27 @@
 
 // ? Dahili bir resim eklemek icin import yapmak gereklidir.
 
+import img2 from "../img/spring2.jpg"
+
 const Content = () => {
+  const imgStyle = {
+    display :"black",
+    width: "300px",
+    margin: "1rem auto",
+  }
     return (
       <div>
-        <h2>React JS</h2>
+        <h2>  React JS</h2>
         <p>
           React, Kullanici arabirimi tasarlamak icin kullanilan bir JS
           kütüphanesidir.
         </p>
         <img
+        style ={imgStyle}
           src="https://cdn.pixabay.com/photo/2017/02/15/13/40/tulips-2068692__340.jpg"
           alt="img1"
         />
+
       </div>
     );
   };
