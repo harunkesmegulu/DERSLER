@@ -4,8 +4,7 @@
 //? Footer comp.
 
 const Footer = () => {
-    return <footer>My First Footer, {new Date().getFullYear()} </footer>;
-  };
-  
-  export default Footer;
-  
+  return <footer>My First Footer, {new Date().getFullYear()} </footer>;
+};
+
+export default Footer;
