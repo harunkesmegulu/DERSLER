@@ -1,4 +1,4 @@
-import Card from "./components/card/Card";
+import Card from "./components/cards/Card";
 import data from "./util/data";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       {data.map((item) => {
         console.log(item);
-        const { id, language, img, btnName } = item; //! destr.
+        const { id, language, img, btnName } = item; //! destruction
         return <Card key={id} language={language} img={img} btn={btnName} />;
       })}
     </>
