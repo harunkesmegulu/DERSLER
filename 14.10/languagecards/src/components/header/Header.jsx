@@ -1,7 +1,7 @@
 import './Header.css';
 import React from 'react';
 import logo from '../../assets/react.svg';
-import item from './helper/data'
+
 
 
 const Header = () => {

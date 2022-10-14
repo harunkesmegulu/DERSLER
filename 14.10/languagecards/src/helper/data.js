@@ -7,7 +7,7 @@ import php from "../assets/php.png";
 import javaScript from "../assets/javascript.png";
 import html from "../assets/html.png";
 
-const languages = [
+const language = [
   {
     name: "html",
     img: html,
@@ -50,4 +50,4 @@ const languages = [
   },
 ];
 
-export default languages
+export default language
