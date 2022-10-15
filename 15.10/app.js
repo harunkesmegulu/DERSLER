@@ -41,5 +41,8 @@ const perfetNumber=(num)=>{
             count += i
         }
     }
-    return count ==num
+    if(count==num){
+        return count;
+    }
+    // return count ==num
 }
