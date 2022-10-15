@@ -19,3 +19,27 @@ but1.addEventListener("click",()=>{
         }
     }
 });
+let i;
+but2.addEventListener("click",()=>{
+    tex2.innerHTML=""
+    let a= +in1.value
+    let b= +in2.value
+    
+    for(i=a;i<=b;i++){
+        if (perfetNumber(i)){
+            tex2.innerHTML += i +"\n"
+        }
+
+    }
+    
+})
+
+const perfetNumber=(num)=>{
+    count=0
+    for( i=0;i<num;i++){
+        if(num % i==0){
+            count += i
+        }
+    }
+    return count ==num
+}
