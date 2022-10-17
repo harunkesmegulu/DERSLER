@@ -16,7 +16,7 @@ function App() {
       {/* {show && <LifeCycleMethods />} */}
 
       {/* {show && <UseEffectHook />} */}
-      <User />
+      <User/>
     </div>
   );
 }
