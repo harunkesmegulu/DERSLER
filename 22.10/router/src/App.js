@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Routes>
-        
+
       <Home />
       <Instructors />
       <Contact />
