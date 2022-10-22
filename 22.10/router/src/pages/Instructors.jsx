@@ -5,4 +5,4 @@ const Instructors = () => {
     )
   }
   
-  export default Instructors
+  export default Instructors;
