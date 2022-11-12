@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const navigate = useNavigate();
+  const user =false;
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="secondary">
@@ -18,10 +19,12 @@ export default function Navbar() {
             sx={{ flexGrow: 1, cursor: "pointer" }}
             onClick={() => navigate("/")}
           >
-            Clarusway News
+            <h1>World News</h1>
           </Typography>
+          {user && <Button color="inherit">Logout</Button>}
+          {!user && <Button color="inherit">Login</Button>}
 
-          <Button color="inherit">Login</Button>
+          
         </Toolbar>
       </AppBar>
     </Box>
