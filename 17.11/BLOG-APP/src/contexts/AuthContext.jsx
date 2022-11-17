@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {createContext} from 'react'
+import {userObserver} from '../helper/firebase';
 
 const AuthContext = () => {
   return (
