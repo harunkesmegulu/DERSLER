@@ -116,7 +116,7 @@ person2.set_details("henry",15)
 person2.get_details()
 
 """
-
+"""
 class Person:
     company = "tsk"
     
@@ -148,6 +148,41 @@ person2.get_details()
 
 person1.salute()
 person2.salute()
+
+"""
+#spacial methods (dunder methods)
+
+
+class Person:
+    company = "tsk"
+
+    def __init__(self, name, age, gender="male"):
+        self.name = name
+        self.age =age
+        self.gender = gender
+
+    def set_details(self, name, age):
+        self.name = name
+        self.age = age
+
+
+    def get_details(self):
+        print(f"{self.name} - {self.age} - {self.gender} ")
+
+
+person1 = Person("victor", 33) #instance create edilirken çağrılıp değiştiriliyor --ama bir instance göndermez.
+
+person1.get_details()
+
+
+
+
+
+
+
+
+
+
 
 
 
