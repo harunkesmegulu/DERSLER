@@ -152,7 +152,7 @@ person2.salute()
 """
 #spacial methods (dunder methods)
 
-
+"""
 class Person:
     company = "tsk"
 
@@ -174,6 +174,37 @@ person1 = Person("victor", 33) #instance create edilirken çağrılıp değişti
 
 person1.get_details()
 
+
+"""
+
+#! special methods (dunder methods)
+
+class Person:
+    company = "clarusway"
+    person_count = 0
+    
+    #  automatically runs when the instance is created
+    def __init__(self, name, age, gender="male"):
+        self.name = name
+        self.age = age
+        self.gender = gender
+        Person.person_count = Person.person_count +1
+
+
+        
+    def get_details(self):
+        print(f"{self.name} - {self.age} - {self.gender}")
+    
+
+person1 = Person("victor", 33)
+person2 = Person("henry", 33)
+
+
+person1.get_details()
+print(Person.person_count)
+# person2 = Person() #we must pass the arg when creating ins.
+
+# __str__ metodu
 
 
 
