@@ -30,6 +30,11 @@ person2 = Person()
 print(person1.name) #instamces inherites class atributes
 print(person2.age)
 
+print("-----------------clas'ta yapılan değişiklik diğerlerini instanceları etkiliyor--------------------")
+Person.job = "developer"
+print(person1.job)
+print("-------------------------------------")
+
 
 
 
