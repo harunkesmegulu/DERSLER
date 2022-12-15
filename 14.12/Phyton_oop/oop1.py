@@ -35,9 +35,47 @@ Person.job = "developer"
 print(person1.job)
 print("-------------------------------------")
 
+"""
+class Person:
+    name = "victor"
+    age = 33
+
+person1 = Person()
+person2 = Person()
+
+person1.location = "turkey"
+person2 de location bilgisi yoktur.
+"""
+"""
+class Person:
+    name = "victor"
+    age = 33
+
+    def test(self):  #hangi instance çalıştırılırsa gönderilmiş olan argumanı temsil ediyor.
+        print("test")
+
+person1 = Person()
+person2 = Person()
 
 
+person1.test()
+person2.test()
 
+"""
+
+class Person:
+    name = "victor"
+    age = 33
+
+    def test(self):  #hangi instance çalıştırılırsa gönderilmiş olan argumanı temsil ediyor.
+        print("test")
+
+person1 = Person()
+person2 = Person()
+
+
+person1.test()
+person2.test()
 
 
 

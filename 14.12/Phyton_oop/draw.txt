@@ -1,0 +1,3 @@
+ortak özellikler class tan alınır. attributlarda birbirinden ayırt edici diğer özellikleri olur.
+Bir instance a eklenecek bir özellik diğer instance ları etkilemez.
+class ortak özellikler kümesi
