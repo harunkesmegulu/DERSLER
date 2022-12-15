@@ -9,13 +9,29 @@ print("-------------------------------------")
 
 
 #! Everything in Python is class
-
+"""
 def print_types(data):
     for i in data:
         print (i, type(i))
 
 test =[122, "victor", [1,2,3], (1,2,3), {1,2,3}, True, lambda x:x]
 print_types(test)
+
+"""
+
+#! defining class:
+class Person:
+    name = "victor"
+    age =33
+
+person1 = Person()  #creating object or instance
+person2 = Person()
+
+print(person1.name) #instamces inherites class atributes
+print(person2.age)
+
+
+
 
 
 
