@@ -131,9 +131,9 @@ class Person:
     def get_details(self):
         print(f"{self.name} - {self.age}")
 
-        @staticmethod   #static methodlar self parametreleri almazlar
-        def salute():
-            print("Hi there")
+    @staticmethod   #static methodlar self parametreleri almazlar
+    def salute():
+        print("Hi there")
 
 person1 = Person()
 person2 = Person()
@@ -146,6 +146,8 @@ person1.get_details()
 person2.set_details("henry",15)
 person2.get_details()
 
+person1.salute()
+person2.salute()
 
 
 
