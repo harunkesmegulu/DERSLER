@@ -190,6 +190,9 @@ class Person:
         self.gender = gender
         Person.person_count = Person.person_count +1
 
+    def __str__(self):
+        return f"{self.name} - {self.age}"
+
 
         
     def get_details(self):
@@ -200,15 +203,17 @@ person1 = Person("victor", 33)
 person2 = Person("henry", 33)
 
 
-person1.get_details()
-print(Person.person_count)
+# person1.get_details()
+# print(Person.person_count)
+
+
 # person2 = Person() #we must pass the arg when creating ins.
 
 # __str__ metodu
 
 
-
-
+print(person1)
+print(person2)
 
 
 
