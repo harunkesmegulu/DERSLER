@@ -1,3 +1,13 @@
 ortak özellikler class tan alınır. attributlarda birbirinden ayırt edici diğer özellikleri olur.
 Bir instance a eklenecek bir özellik diğer instance ları etkilemez.
 class ortak özellikler kümesi
+
+
+kullanıcılar tarafındfan verilerin ne kadarı görüntülenebileceğini veya değiştirilebileceğini belirler. Phyton da tam olarak encopsalation uygulayamıyoruz.
+
+public - private - protected (not in python or js) tam anlamıyla python da bunlar yoktur
+
+
+
+
+

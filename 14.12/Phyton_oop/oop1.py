@@ -179,8 +179,9 @@ person1.get_details()
 
 #! special methods (dunder methods)
 
+"""
 class Person:
-    company = "clarusway"
+    company = "tsk"
     person_count = 0
     
     #  automatically runs when the instance is created
@@ -203,6 +204,8 @@ person1 = Person("victor", 33)
 person2 = Person("henry", 33)
 
 
+"""
+
 # person1.get_details()
 # print(Person.person_count)
 
@@ -212,11 +215,41 @@ person2 = Person("henry", 33)
 # __str__ metodu
 
 
-print(person1)
-print(person2)
+# print(person1)
+# print(person2)
+
+
+# Encapsulation
 
 
 
+class Person:
+    company = "tsk"
+        
+    def __init__(self, name, age,):
+        self.name = name
+        self.age = age
+        self._id = 5000
+        self.__number = 200
+        
+    def __str__(self):
+        return f"{self.name} - {self.age}"
+
+    def get_details(self):
+        print(f"{self.name} - {self.age}")
+    
+person1 = Person("victor", 33)
+
+   #tek çizgi uyarı. değiştirme
+person1._id = 4000
+print(person1._id)
+
+print(person1.__number)
+print(person1._Person__number)  #Bu şekilde ulaşılabilir.
+
+
+
+# Abstraction
 
 
 
