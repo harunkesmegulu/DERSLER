@@ -260,4 +260,11 @@ print(person1._Person__number)  #Bu şekilde ulaşılabilir.
 
 
 
+
+
+
+
+
+
+
 print("---------------------------------------------------------")

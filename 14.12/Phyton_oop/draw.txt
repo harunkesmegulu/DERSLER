@@ -8,6 +8,6 @@ kullanıcılar tarafındfan verilerin ne kadarı görüntülenebileceğini veya 
 public - private - protected (not in python or js) tam anlamıyla python da bunlar yoktur
 
 
-
+Abstraction, bir nesnenin önemli olan özelliklerini ve davranışlarını ortaya çıkarma işlemidir. Bu sayede nesnenin detayları gizlenir ve sadece temel özellikleri ve davranışları kullanıcılar tarafından görülebilir. Bu sayede nesneler daha basit ve kolay anlaşılır hale gelir. Abstraction, encapsulation ile birlikte kullanılarak kodun daha anlaşılır ve değiştirilebilir hale gelmesine yardımcı olur.
 
 
