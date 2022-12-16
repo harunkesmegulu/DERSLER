@@ -13,7 +13,7 @@ print("-------------------------------------")
 
 
 #! Everything in Python is class
-"""
+
 def print_types(data):
     for i in data:
         print (i, type(i))
@@ -21,7 +21,7 @@ def print_types(data):
 test =[122, "victor", [1,2,3], (1,2,3), {1,2,3}, True, lambda x:x]
 print_types(test)
 
-"""
+
 """
 #! defining class:
 class Person:
@@ -221,7 +221,7 @@ person2 = Person("henry", 33)
 
 # Encapsulation
 
-
+"""
 
 class Person:
     company = "tsk"
@@ -247,17 +247,30 @@ print(person1._id)
 print(person1.__number)
 print(person1._Person__number)  #Bu şekilde ulaşılabilir.
 
-
+"""
 
 # Abstraction
 
+"""
+
+liste = [2, 3,5,1, 4]
+liste.sort()
+
+print(liste)
 
 
+class Update(models.Model):
+    update = models.DateTimeField("auto_now_true")
+
+    class Meta:
+        abstract = True
+
+class Question(Update):
+    pass
+class Answer(Update)
 
 
-
-
-
+"""
 
 
 

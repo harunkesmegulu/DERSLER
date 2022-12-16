@@ -11,3 +11,18 @@ public - private - protected (not in python or js) tam anlamıyla python da bunl
 Abstraction, bir nesnenin önemli olan özelliklerini ve davranışlarını ortaya çıkarma işlemidir. Bu sayede nesnenin detayları gizlenir ve sadece temel özellikleri ve davranışları kullanıcılar tarafından görülebilir. Bu sayede nesneler daha basit ve kolay anlaşılır hale gelir. Abstraction, encapsulation ile birlikte kullanılarak kodun daha anlaşılır ve değiştirilebilir hale gelmesine yardımcı olur.
 
 
+Bir örnek olarak, bir telefonu düşünebilirsiniz. Telefon, çeşitli özelliklere ve davranışlara sahiptir (örneğin mesaj gönderme, arama yapma, alarm kurma gibi) ancak kullanıcıların bu özellikleri ve davranışları kullanabilmeleri için telefonun nasıl çalıştığını bilmeleri gerekmez. Telefonun kullanımı için gerekli olan özellikler ve davranışlar, telefonun arayüzünde gösterilir ve kullanıcılar bu arayüzü kullanarak telefonu kullanabilirler. Bu durumda, telefonun içinde yer alan özellikler ve davranışlar encapsulation ile gizlenmiştir ve sadece kullanıcıların ihtiyaç duydukları özellikler ve davranışlar abstraction ile ortaya çıkarılmıştır.
+
+
+
+
+#? Abstraction
+  # Abstraction is the process of hiding the internal complex details of an application from the outer world. Abstraction is used to describe things in simple terms. It's used to create a boundary between the application and the client programs.  
+    # like coffee machine in real life. you dont need to know how it works but you know its functionality
+    
+    # kullanıcı gereksiz detaylardan ve bilmesine ihtiyaç olmayan yapıdan uzaklaştırarak yormamak - soyutlama
+
+
+
+
+    
