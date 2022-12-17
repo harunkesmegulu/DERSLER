@@ -369,3 +369,4 @@ class Makale(models.Model):
 
     class Meta:
         ordering = ["name"]
+        verbose_name ="makaleler"
