@@ -234,7 +234,7 @@ print(person1._Person__number)
 
 
 class Person:
-    company = "clarusway"
+    company = "TSK"
     
     def __init__(self, name, age):
         self.name = name
@@ -265,3 +265,78 @@ print(emp1.company)
 #? Polymorphism
 #* Overriding:
 # Overriding is an object-oriented programming feature that enables a child class to provide different implementation for a method that is already defined and/or implemented in its parent class or one of its parent classes.
+
+#* overloading:
+# Two or more methods have the same name but different numbers of parameters or different types of parameters, or both. These methods are called overloaded methods and this is called method overloading. #! the concept of overloading simply does not apply to python(give parameters None default value - or - multipledispatch package)
+
+
+
+
+
+class Person:
+    company = "TSK"
+    
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def __str__(self):
+        return f"{self.name}"
+    
+    def get_details(self):
+        print(self.name, self.age)
+
+
+class Employe(Person):
+    
+    def __init__(self, name, age, path):
+        super().__init__(name, age)
+        self.path = path
+        
+    def get_details(self ):   #salary=None, duration=None
+        super().get_details()
+        print(self.path)
+        
+
+emp1 = Employe("barry", 20, "FS")
+emp1.get_details()
+print(emp1.company)
+
+
+#? multiple inheritance
+
+class Person:
+    company = "TSK"
+    
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def __str__(self):
+        return f"{self.name}"
+    
+    def get_details(self):
+        print(self.name, self.age)
+class Lang:
+    def __init__(self, langs):
+        self.langs = langs
+    
+    def display_langs(self):
+        print(self.langs)
+
+class Employe(Person, Lang):
+    
+    def __init__(self, name, age, path, langs):
+        super().__init__(name, age)
+        Lang.__init__(self, langs)
+        self.path = path
+        
+    def get_details(self):
+        super().get_details()
+        print(self.path)
+        
+
+emp1 = Employe("barry", 20, "FS", "Javascript")
+emp1.get_details()
+print(emp1.company)
+emp1.display_langs()
