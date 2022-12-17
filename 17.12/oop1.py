@@ -340,3 +340,32 @@ emp1 = Employe("barry", 20, "FS", "Javascript")
 emp1.get_details()
 print(emp1.company)
 emp1.display_langs()
+
+
+# getattr(instance, attribute) : returns attribute value of instance
+# setattr(instance, attribute, new value) : update attribute of instance
+# hasattr(instance, attribute) : return boolean
+# delattr(instance, attribute) : delete attribute of instance
+
+print(getattr(emp1, "name"))
+x = getattr(emp1,"name")
+print(x)
+
+setattr(emp1, "name", "harun")
+print(getattr(emp1, "name"))
+
+print(hasattr(emp1, "name"))
+
+
+
+#?inner class
+
+from django.db import models
+
+class Makale(models.Model):
+    name =models.CharField(max_length=50)
+    author =models.CharField(max_length=50)
+
+
+    class Meta:
+        ordering = ["name"]
