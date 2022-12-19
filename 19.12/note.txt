@@ -27,8 +27,10 @@ source env/bin/activate macbook için   Linux'ta aynı.
 
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
+$ source env/Scripts/activate
 pip install django
 
+pip freeze
 
 
 python -m venv env
@@ -241,7 +243,7 @@ cython_debug/
 
 
 
-django-admin startproject main
+
 
 
 django-admin startproject main .
@@ -259,3 +261,7 @@ python3 cevap veriyorsa, program files içinde python klasörü içinde python3e
 
 
 pip install -r requirements.txt
+
+
+
+ python manage.py runserver
