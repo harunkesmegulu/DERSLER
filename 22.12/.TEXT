@@ -122,6 +122,8 @@ def student_api_get_update_delete(request, pk):
         }
         return Response(data)
 
+serilazer basic method
+
 class StudentSerializer(serializers.Serializer):
     first_name = serializers.CharField(max_length=50)
     last_name = serializers.CharField(max_length=50)
@@ -140,6 +142,14 @@ class StudentSerializer(serializers.Serializer):
         instance.save()
         return instance
 
+urls.py
 
+from django.urls import path
+from .views import home , student_api, student_api_get_update_delete
 
+urlpatterns = [
+    path("", home),
+    path("student/", student_api),
+    path("student/<int:pk>", student_api_get_update_delete),
+]
 
