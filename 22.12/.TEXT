@@ -1,0 +1,9 @@
+
+
+
+pip install python-decouple
+
+pip freeze > requirements
+
+
+
