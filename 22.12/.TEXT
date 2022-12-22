@@ -44,5 +44,12 @@ class Student(models.Model):
     def __str__(self):
         return self.first_name
 """
+python manage.py makemigrations
+
+python manage.by migrate
+
+python manage.py createsuperuser
+email
+pasword
 
 
