@@ -1,0 +1,14 @@
+python -m venv env 
+
+source env/Scripts/Activate
+
+pip install django
+
+django-admin startproject main .
+
+((python.exe -m pip install --upgrade pip))
+
+.gitignore dosya oluşturuldu içine dosya yapıştır
+
+python manage.py runserver  (http ye ctrl click) çalıştığını kontrol et ctrl c durdur
+
