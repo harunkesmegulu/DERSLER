@@ -12,3 +12,28 @@ django-admin startproject main .
 
 python manage.py runserver  (http ye ctrl click) çalıştığını kontrol et ctrl c durdur
 
+python manage.py startapp teamanka
+
+python manage.py migrate
+
+.env dosya aç. şifre kopyala(yoruma al) - tırnak kaldır
+
+pip install python-decouple  (env de ki şifre ve gizli key leri okumak için)
+
+pip freeze > requirements.txt  (indirdiklerimizi görebiliyoruz.)
+
+from decouple import config (settings 14 satıra eklendi)
+
+SECRET_KEY = config('SECRET_KEY')  (25 SATIR SİLİNDİ. 26 SATIRA EKLENDİ)
+
+'teamanka', (installapp içine 46 satıra eklendi)
+
+maın projenin ana yapısı- teamanka bu projenin app bölümü-
+ ne maksatla kullanılacağı size bağlı-
+ - farklı uygulama ihtiyacı için farklı bir app açılır
+
+from django.urls import path, include (17.satı)
+path('api/',include('teamanka.urls')), (22 satır)
+
+teamanka dosyası altına urls.py dosyası eklendi
+
