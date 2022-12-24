@@ -1,0 +1,18 @@
+count = p.student_set.all()
+
+s= Student.object.get(number=1)
+
+p.students.filter(first_name_startswith='H')
+
+p.first()
+
+p[0]
+
+p[0]
+
+relatedname
+
+FUNCTİON BASE
+
+htpt methots
+get, post, delete, put(edit, data base e tüm veriyi değişiklikle beraber gönderir), patch(edit, sadece değiştirilecek data değiştirilir.)
