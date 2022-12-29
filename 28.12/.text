@@ -1,0 +1,42 @@
+python -m venv env
+source env/Scripts/Activate 
+pip install -r requirements.txt
+pip install django-filter
+pip manage.py shell
+>> shell komutları >>
+from student_api.faker import run
+run()
+exit()
+
+
+Henry-Instructor
+  8:26 PM
+>>> from student_api.faker import run
+>>> run()
+
+Shell komutları:
+* python manage.py shell
+* from student_api.faker import run
+* run()
+* exit()
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
+
+
+from rest_framework.permissions import BasePermission, IsAuthenticated
+
+
+
+ #* herkes CRUD yapabilir
+    # permission_classes = [IsAuthenticated]
+    
+    #* sadece admin olan CRUD yapabilir
+    # permission_classes = [IsAdminUser]
+    
+    #* admin olan herşeyi yapar, olmayan sadece GET(read) yapar.
+    permission_classes = [IsAuthenticatedOrReadOnly]
